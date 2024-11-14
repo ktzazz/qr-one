@@ -1,18 +1,24 @@
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    width: 100vw;
     background-color: #D5E1EF;
     font-family: 'Outfit';   
     
 }
 
 .info{
-    width: 13vw; 
+    max-width: 17rem; 
     background-color: #FFFFFF;
     padding: 12px;
     padding-bottom: 20px;
@@ -25,7 +31,7 @@ body{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     border-radius: 10px;
 }
@@ -33,6 +39,8 @@ img{
 h1{
     font-size: 20px;
     font-weight: 700px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 p{
@@ -47,12 +55,7 @@ p{
     bottom: 15px;
 }
 
-@media (max-width: 930px){
-
-    .info{
-        width: 65vw;
-        
-    }
+@media (max-width: 430px){ 
     
 .attribution{
     font-size: 13px;
